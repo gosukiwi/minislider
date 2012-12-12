@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="minislider.css">
+        <style>
+        #slide,
+        #slide2 {
+            height: 150px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Test slider</h1>
+        <ul id="slide">
+            <li>
+                <img src="http://placehold.it/450x150/ffffff/000000" alt="">
+            </li>
+            <li>
+                <img src="http://placehold.it/450x150/ff0000/000000" alt="">
+            </li>
+            <li>
+                <img src="http://placehold.it/450x150/ff00ff/000000" alt="">
+            </li>
+        </ul>
+
+        <h1>Test slider 2</h1>
+        <ul id="slide2">
+            <li>
+                <img src="http://placehold.it/450x150/ffffff/000000" alt="">
+            </li>
+            <li>
+                <img src="http://placehold.it/450x150/ff0000/000000" alt="">
+            </li>
+            <li>
+                <img src="http://placehold.it/450x150/ff00ff/000000" alt="">
+            </li>
+        </ul>
+
+        <script src="js/minislider.js"></script>
+        <script>(function () {
+            "use strict";
+
+            minislider({
+                element: 'slide',
+                delay: 2
+            });
+
+            minislider({
+                element: 'slide2',
+                animation: 'slide',
+                delay: 2
+            });
+        }());</script>
+    </body>
+</html>

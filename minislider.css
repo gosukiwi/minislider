@@ -1,0 +1,10 @@
+ul.minislider {
+    position: relative;
+    list-style-type: none;
+}
+
+ul.minislider img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
